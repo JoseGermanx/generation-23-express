@@ -74,20 +74,6 @@ app.put('/todos/:id', (req, res)=>{
 
 })
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 //        requets, response
 app.get('/', (req, res) => {
     // lógica de negocio
