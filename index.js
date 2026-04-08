@@ -19,6 +19,14 @@ app.get('/home', (req, res)=>{
     })
 })
 
+app.get('/oficinas', (req, res)=>{
+    // una función controladora o manejadora de una ruta siempre debe responder
+    res.json({
+        oficinas: [{id: 1, oficina: "Oficina 1"}, {id: 2, oficina: "Oficina 2"}]
+    })
+})
+
+
 // método para leventar el servidor y escuchar en el puerto indicado
 app.listen(port, () => {
   console.log(`Aplicación live en el puerto: ${port}`)
