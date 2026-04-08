@@ -6,7 +6,17 @@ const port = 3000 // definición del puerto donde se levanta al app
 //        requets, response
 app.get('/', (req, res) => {
     // lógica de negocio
-  res.send('Hello World!')
+    // una función controladora o manejadora de una ruta siempre debe responder
+  res.status(201).json({
+    msg: "Hola mundo."
+  })
+})
+
+app.get('/home', (req, res)=>{
+    // una función controladora o manejadora de una ruta siempre debe responder
+    res.json({
+        text: "Home"
+    })
 })
 
 // método para leventar el servidor y escuchar en el puerto indicado
