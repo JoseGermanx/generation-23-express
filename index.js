@@ -26,6 +26,10 @@ app.get('/oficinas', (req, res)=>{
     })
 })
 
+app.get('/prueba', (req, res)=> {
+    res.sendFile(__dirname + '/prueba.html')
+})
+
 
 // método para leventar el servidor y escuchar en el puerto indicado
 app.listen(port, () => {
